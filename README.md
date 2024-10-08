@@ -3,6 +3,7 @@
 Dados provenientes do SINAN Estadual
 
 Painel do SINAN: https://ricmed-painelsinan.streamlit.app/
+
 Análise feita: https://github.com/ricmed/projeto_ebac/blob/main/trata_dados.ipynb
 
 A doença apresenta elevada incidência em determinadas áreas além do risco de letalidade, que pode chegar a 40% nos casos mais graves. Sua ocorrência está relacionada às condições precárias de infraestrutura sanitária e alta infestação de roedores infectados. 

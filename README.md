@@ -16,10 +16,20 @@ Por isso se faz necessária políticas públicas de controle desta doença, alé
 ## 2. Modelagem
 - Foram filtrados somente os registros de leptospirose
 - Valores nulos foram identificados e tratados.
-  - Foram identificadas e excluídas colunas com 100% de valores nulos
-  - Colunas com poucos valores nulos tiveram suas linhas correspondentes excluídas
-  - Demais colunas com valores nulos foram imputadas utilizando o KNNImputer
+  - Foram identificadas e excluídas colunas com 100% de valores nulos.
+  - Colunas com poucos valores nulos tiveram suas linhas correspondentes excluídas.
+  - Demais colunas categóricas com valores nulos, foi criada uma classe Sem Informação para esses casos.
+- Foi criada uma coluna de quantidade de dias a partir das colunas referentes a data de ínicio dos sintomas e a data de registro da notificação, data que pode ser considerada como a data em que o paciente foi a unidade de saúde.
+- Foram eliminadas colunas que não poderiam contribuir com a análise.
+- Foi utilizada a técnica de one-hot encoder para criar variávéis dummies a partir de vaviáveis categóricas.
+- Foi utilizada a técnica de label encoder para codificar a variável FAIXA_ETARIA.
+- Foram testados os seguintes algorítmos: Regressão Logistica, Random Forest AdaBoost e XGBoost, com as classes desbalanceadas, com aplicação Oversampling e com aplicação de Undersampling
 
+## 3. Conclusões
+- Nenhum dos modelos criados conseguiu prever a classe minoritária de forma satisfatória
+- Somente over ou under sampling não foi suficiente para os modelos performarem de forma apropriada
+- Os dados são de díficil análise e classificação
+- Sugestão de aplicar ténicas mais refinadas para tratamento de classes desbalanceadas
 
 
 
